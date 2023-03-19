@@ -1,0 +1,14 @@
+#my-container {
+    background-color: black; /* default color */
+  }
+  
+  #my-container.true {
+    width: 5cm;
+    height: 5cm;
+    background-color: red; /* color when value is true */
+  }
+  #my-container.false {
+    width: 5cm;
+    height: 5cm;
+    background-color: green; /* color when value is false */
+  }

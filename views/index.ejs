@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang ="en">
+      <head>
+        <title>Number Search</title>
+        <style>
+          #my-container {
+            background-color: red;
+            width: 5cm;
+            height: 5cm;
+          }
+          #my-container.true {
+            background-color: green;
+            width: 5cm;
+            height: 5cm;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Kuka soitti?</h1>
+        <form action="/check">>
+          <label for="searchinput">Anna numero tähän-></label>
+          <input type="text" name="searchterm" id="searchinput">
+          <button>Etsi</button>
+
+        </form>
+      
+
+        <h5><div id="my-container" class="<%= numerotarkastus ? 'true' : '' %>">Mennäkkö vai eikö mennä?</div></h5>
+      </body>
+    </html>
