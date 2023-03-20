@@ -38,7 +38,3 @@ export async function getnumero(puhelinnumero) {
 export async function etsi(puhnum) {
     
 }
-
-
-const testi = await numbercheck(3)
-console.log(testi)
