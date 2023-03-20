@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang ="en">
       <head>
-        <title>Number Search</title>
+        <title>Numeron väri generaattori</title>
         <style>
+          body {
+            font-family: Times New Roman, serif;
+			      text-align: center;
+          }
           #my-container {
             background-color: red;
             width: 5cm;
             height: 5cm;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
           }
           #my-container.true {
             background-color: green;
             width: 5cm;
             height: 5cm;
+            text-align: center;
           }
         </style>
       </head>
       <body>
-        <h1>Kuka soitti?</h1>
+        <h1>Numeron Väri Generaattori</h1>
         <form action="/check">>
           <label for="searchinput">Anna numero tähän-></label>
           <input type="text" name="searchterm" id="searchinput">
@@ -25,6 +36,6 @@
         </form>
       
 
-        <h5><div id="my-container" class="<%= numerotarkastus ? 'true' : '' %>">Mennäkkö vai eikö mennä?</div></h5>
+        <h5><div id="my-container" class="<%= numerotarkastus ? 'true' : '' %>">Numerosi väri on</div></h5>
       </body>
     </html>
